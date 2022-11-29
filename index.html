@@ -5,137 +5,410 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Project</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- font-awesome  -->
+    <title>Portfolio Website</title>
+    <!-- fontawesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <!-- boxicons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css" integrity="sha512-AGmpdsTqvAh2GvTWzVhhJ9VqQb1eAXwOM7uiWtv0DzcnGaGWy98K51z2cK5OG3gp4NB1HbMaD7p0MeO9kE7E3w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
 </head>
 
-<body>
-    <ul class="nav_bar" id="search">
-        <li><a href="#about">About</a></li>
-        <li><a href="#explore">Explore</a></li>
-        <li><a href="#"><i class="fa-solid fa-location-pin"></i></a></li>
-        <li><a href="#journal">Journal</a></li>
-        <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
-    </ul>
-    <header>
+<body class="bg-light">
+    <!-- nav bar start  -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
         <div class="container">
-            <img src="./images/Northern_light_1.jpg" alt="">
-            <div class="text_container">
-                <h1 class="head">The Great Outdoors</h1>
-                <p>Wander often. Wonder always.</p>
-                <div class="play_btn">
-                    <i class="fa-solid fa-play"></i>
+            <a class="navbar-brand text-danger fw-bold fw-3" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger " aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger " href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger " href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger " href="#projects">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-danger  " href="#freelance">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger  " href="#member">Members</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-danger  " href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end  -->
+    <!-- home section start  -->
+    <section class="home " id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-content-center align-items-center ">
+                <div class="col-md-6">
+                    <div class="text-center rounded-circle overflow-hidden">
+                        <img src="./img_for_portfolio/pp2.jpg" class="mt-5 shadow-sm img-responsive" width="70%" height="70%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-first p-4 ">
+                    <div class="my-profile">
+                        <p class="text-muted">I am</p>
+                        <h1 class="text-danger fs-1 fw-bold text-uppercase">Fullstack Web Developer</h1>
+                        <h4 class="mb-5">Suanh Sawm Tung</h4>
+                        <p class="text-muted fs-5">If you feel difficult to pronounced my name, you can call me Augusting. It is my christian name. And then, I am finding a fullstack developer job that can give me income and experience that I really need right now. I believe that
+                            I have enough skill to make a fullstack project. Even if I have weak points or still need enough skills beacause of not having work experiences, I will try my best in programming, my passion.</p>
+                    </div>
+                    <!-- <a href="#" class="btn btn-danger p-lg-2 fs-lg-2 mt-lg-2 ">Download My CV</a> -->
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    <!-- home section end  -->
+    <!-- about section start  -->
+    <section class="about mt-4 mb-5" id="about">
+        <div class="container-lg px-4 ">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-lg-8 ">
+                    <div class="second-title text-center">
+                        <h2 class=" fw-bold">About Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class=" col-md-6 col-lg-4 my-4  ">
+                    <div class="item p-3 bg-white shadow rounded">
+                        <div class="icon text-center fs-3 text-danger mb-2">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="fs-4 text-center">Education</h3>
+                        <p class="text-muted">I'm a petroleum engineering student from technological university(Thanlyin). I decided to stop my university student life at 5th year because of my country revolution and knowing that my real passion is programming.</p>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-6 col-lg-4 my-4 ">
+                    <div class="item p-3 bg-white shadow rounded">
+                        <div class="icon text-center fs-3 text-danger mb-2">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="fs-4 text-center">How I studied programming</h3>
+                        <p class="text-muted">I joined code lab fullstack developer class at March, 2022 and learned laravel, vue.js fullstack course for about 8 month. I built two projects and the other mini projects from course outlines of our class. I believe that I can
+                            work with vuex and vue router.</p>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-6 col-lg-4 my-4 ">
+                    <div class="item p-3 bg-white shadow rounded ">
+                        <div class="icon text-center fs-3 text-danger mb-2 ">
+                            <i class="fa-solid fa-image "></i>
+                        </div>
+                        <h3 class="fs-4 text-center ">My Future Plan</h3>
+                        <p class="text-muted ">To become a skillful fullstack developer and wanna go abroad and work with good slary. So, I have been learning for about one year and still go on. At that time, I'm finding a suitable junior developer job and make some projects
+                            by using all technologies I have learned .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end  -->
+    <!-- skill section start  -->
+    <section class="skills mt-2 mb-5" id="skills">
+        <div class="container-lg px-4 ">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-lg-8 ">
+                    <div class="second-title text-center">
+                        <h2 class=" fw-bold">Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">HTML</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">CSS</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">JavaScript</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 45%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">bootstrap</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <!-- .contact links start  -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12 d-flex align-items-center ">
+                            <div class="contact-link  fs-4">
+                                <a href="https://www.facebook.com/codelab.mm/videos/1036420020347392/" target="_blank" class="text-dark text-decoration-none"><i class="fa-brands fa-facebook-f me-3"></i></a>
+                                <a href="https://www.instagram.com/" class="text-dark text-decoration-none" target="_blank"><i class="fa-brands fa-instagram me-3"></i></a>
+                                <a href="#" class="text-dark text-decoration-none" target="_blank"><i class="fa-brands fa-linkedin-in me-3"></i></a>
+                                <a href="https://github.com/suanhsawmtung" class="text-dark text-decoration-none" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact links end  -->
+                </div>
+                <div class="col-md-6 ">
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">PHP</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 45%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">Laravel</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">MySQL</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="process-bar mb-4">
+                        <h3 class="fs-5 ">Vue.js</h3>
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skill section end  -->
 
-    <section id="explore">
-        <div class="content">
-            <h2>Explore the world</h2>
-            <p>We seek to provide the most authentic content from athletes, adventurers, explorers and travellers around the world. Our long-term mission is to educate, inspire and enable all people to experience & protect wilderness.</p>
+    <!-- project section start  -->
+    <section class="projects my-4" id="projects">
+        <div class="container-lg px-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 ">
+                    <h2 class="text-uppercase text-center fw-bold">Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mt-4 mb-2">
+                    <div class="cards">
+                        <img src="./img_for_portfolio/Screenshot (67).png" class="w-100 img-thumbnail shadow" style="height:240px" alt="">
+                        <h3 class="mt-3">Pizza Order Shop</h3>
+                        <p>My very first Laravel blade project. UI is not response bacause I used free downloaded template and had focused on backend.</p>
+                        <a href="https://github.com/suanhsawmtung/Pizza-Order-Shop" class="text-decoration-none fs-5 text-danger">Code</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4 mb-2">
+                    <div class="cards">
+                        <img src="./img_for_portfolio/Screenshot (107).png" class="w-100 img-thumbnail shadow" style="height:240px" alt="">
+                        <h3 class="mt-3">Anime News</h3>
+                        <p>My laravel + Vue.js mini project for japan anime news. UI is not responsive because I used free downloaded template and focus on my vue.js skill.</p>
+                        <a href="https://github.com/suanhsawmtung/AZ-News" class="text-decoration-none fs-5 text-danger">Code</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4 mb-2">
+                    <div class="cards">
+                        <img src="./img_for_portfolio/Screenshot (108).png" class="w-100 img-thumbnail shadow" style="height:240px" alt="">
+                        <h3 class="mt-3">Travel Website Template</h3>
+                        <p>My very first html, css responsive template. Not good too much but I have a plan to built a nuxt.js project by reusing this template.</p>
+                        <a href="https://suanhsawmtung.github.io/travelwebtemplate.github.io/" class="text-decoration-none fs-5 text-danger">Show</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="img_box">
-            <div class="box">
-                <img src="./images/Egypt_1.png" alt="">
-                <div class="img_text ">
-                    <h3>Pyramids</h3>
-                    <p>Egypt</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./images/Greece_1.jpg" alt="">
-                <div class="img_text ">
-                    <h3>Santorini</h3>
-                    <p>Greece</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./images/Janpan_1.jpg" alt="">
-                <div class="img_text ">
-                    <h3>Osaka</h3>
-                    <p>Japan</p>
-                </div>
-            </div>
-        </div>
-        <div class="img_box_btn">
-            <a href="#">See more<i class="fa-solid fa-greater-than"></i></a>
         </div>
     </section>
-    <section id="journal">
-        <div class=" second content">
-            <h2>The Journal</h2>
-            <p>Our favourite stories about public lands and opportunities for you to get involved in protecting your outdoor experiences.</p>
-        </div>
-        <div class="img_box_2">
-            <div class="box">
-                <img src="./images/Brazil_1.jpeg" alt="">
-                <span>May 30, 2017</span>
-                <h3>An Unforgettable</h3>
-                <p>If you only have one day to visit Amazon Forest and you want to make the most out of it.</p>
+    <!-- project section end  -->
+    <!-- freelancer section start  -->
+    <section class="freelance bg-danger my-4 " id="freelance">
+        <div class="container-lg py-5">
+            <div class="row justify-content-center  ">
+                <div class="col-lg-8 text-center ">
+                    <p class="mb-4 text-light">Do you have any project to develope ?</p>
+                    <h2 class="fs-2 mb-4  text-white text-capitalize">I am available for freelance projects.</h2>
+                    <a href="#contact" class="mt-2 btn btn-danger text-decoration-none btn-outline-light">Contact Me</a>
+                </div>
             </div>
-            <div class="box">
-                <img src="./images/Northern_light_1.jpg" alt="">
-                <span>May 28, 2017</span>
-                <h3>Magical Light</h3>
-                <p>A trip of visiting to see those gorgeous lights will give you much pleasure and eternal happiness. </p>
-            </div>
-        </div>
-        <div class="img_box_btn">
-            <a href="#">All posts</a><i class="fa-solid fa-greater-than"></i></a>
         </div>
     </section>
-    <footer id="about">
-        <section class="social">
-            <div class="social_logo">
-                <a href="#" class="logo"><i class='bx bxl-facebook'></i></a>
-                <a href="#" class="logo"><i class='bx bxl-twitter'></i></a>
-                <a href="#" class="logo"><i class='bx bxl-instagram'></i></a>
-                <a href="#" class="logo"><i class='bx bxl-tiktok'></i></a>
-                <a href="#" class="logo"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#" class="logo"><i class='bx bxl-telegram'></i></a>
+    <!-- freelancer section end  -->
+    <!-- member section start  -->
+    <!-- <section class="member mt-5" id="member">
+        <div class="container-lg px-4">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-lg-8 ">
+                    <div class="second-title text-center">
+                        <h2 class=" fw-bold">Our Team Members</h2>
+                    </div>
+                </div>
             </div>
-            <div class="input_btn">
-                <h3>Contact us with Email</h3>
-                <input class="email_box" type="email" placeholder="Email Address...." required>
-                <input class="submit_btn" type="submit" value="Send">
+            <div class="row justify-content-center my-3">
+                <div class="col-lg-8 ">
+                    <div id="member-carousel" class="carousel carousel-dark shadow slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#member-carousel" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#member-carousel" data-bs-slide-to="1" class=" bg-danger" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#member-carousel" data-bs-slide-to="2" class=" bg-danger" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="bg-white rounded mx-3 carousel-item active p-3">
+                                <div class="d-sm-flex text-center text-sm-start align-items-center me-4">
+                                    <img src="./img_for_portfolio/pp4.jpg" class=" w-25 h-25 mb-2 mb-sm-1 rounded-circle img-thumbnail" alt="">
+                                    <div class="ms-sm-4 member-info ">
+                                        <h3 class="fs-1 mb-4 fw-bold">Mya Mya</h3>
+                                        <h2 class="fs-3 text-muted">Senior Web Developer</h2>
+                                    </div>
+                                </div>
+                                <p class="text-muted mb-3 mt-2 me-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ullam soluta, atque doloremque aliquid laborum quo tenetur voluptatum consectetur! Quidem hic veniam nihil quibusdam ducimus voluptate ipsa dolorem beatae?</p>
+                                <div class="text-danger mb-5 fs-3 me-4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded mx-3  carousel-item  p-3">
+                                <div class="d-sm-flex text-center text-sm-start me-4 align-items-center">
+                                    <img src="./img_for_portfolio/pp5.jpg" class="w-25 h-25 mb-2 mb-sm-1 rounded-circle img-thumbnail" alt="">
+                                    <div class="ms-sm-4 member-info">
+                                        <h3 class="fs-1 mb-4 fw-bold">Tun Tun</h3>
+                                        <h2 class="fs-3 text-muted">Senior Web Developer</h2>
+                                    </div>
+                                </div>
+                                <p class="text-muted mb-3 mt-2 me-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ullam soluta, atque doloremque aliquid laborum quo tenetur voluptatum consectetur! Quidem hic veniam nihil quibusdam ducimus voluptate ipsa dolorem beatae?</p>
+                                <div class="text-danger mb-5 fs-3 me-4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded mx-3  carousel-item  p-3">
+                                <div class="d-sm-flex text-center text-sm-start me-4 align-items-center">
+                                    <img src="./img_for_portfolio/pp6.jpg" class="w-25 h-25 mb-2 mb-sm-1 rounded-circle img-thumbnail" alt="">
+                                    <div class="ms-sm-4 member-info ">
+                                        <h3 class="fs-1 mb-4 fw-bold">Kyaw Kyaw</h3>
+                                        <h2 class="fs-3 text-muted">Senior Web Developer</h2>
+                                    </div>
+                                </div>
+                                <p class="text-muted mb-3 mt-2 me-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ullam soluta, atque doloremque aliquid laborum quo tenetur voluptatum consectetur! Quidem hic veniam nihil quibusdam ducimus voluptate ipsa dolorem beatae?</p>
+                                <div class="text-danger mb-5 fs-3 me-4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="social_text">
-                <h4>2017 THE GREAT OUTDOORS. All rights reserved.</h4>
+    </section> -->
+    <!-- member section end  -->
+    <!-- contact section start  -->
+    <section class="contact mt-5" id="contact">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-lg-8 ">
+                    <div class="second-title text-center">
+                        <h2 class=" fw-bold "> Contact Me</h2>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="link_info">
-            <div class="links">
-                <h4>Important Links</h4>
-                <ul class="important_links">
-                    <li><a href="">Weather Channels</a></li>
-                    <li><a href="">City Guides</a></li>
-                    <li><a href="">Airport Transfer</a></li>
-                    <li><a href="">Emergency Phones</a></li>
-                    <li><a href="">Local Airports</a></li>
-                    <li><a href="">Order Booking</a></li>
-                    <li><a href="">Payments</a></li>
-                </ul>
+            <div class="row">
+                <!-- left side start  -->
+                <div class="col-lg-5 my-3 d-flex justify-content-center">
+                    <div>
+                        <div class="contact-items mb-2 d-flex justify-content-start">
+                            <h3 class="me-4 text-danger"><i class="fa-solid fa-phone"></i></h3>
+                            <div class="contact-infos text-muted">
+                                <h5>Phone</h5>
+                                <p class="fs-5">09 783 312 791</p>
+                            </div>
+                        </div>
+                        <div class="contact-items mb-2 d-flex justify-content-start">
+                            <h3 class="me-4 text-danger"><i class="fa-solid fa-envelope"></i></i>
+                            </h3>
+                            <div class="contact-infos text-muted">
+                                <h5>Email</h5>
+                                <p class="fs-5">suanhsawmtung1999@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-items mb-2 d-flex justify-content-start">
+                            <h3 class="me-4 text-danger"><i class="fa-solid fa-location-pin"></i></h3>
+                            <div class="contact-infos text-muted">
+                                <h5>Address</h5>
+                                <p class="fs-5">Yangon, Myanmar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left side end  -->
+                <!-- right side start  -->
+                <div class="col-lg-7 mt-3  px-4">
+                    <form action="#">
+                        <div class="row mb-3">
+                            <div class="col-md-6 ">
+                                <input type="text" placeholder="Your Name..." class=" mb-3 mb-md-0 bg-white shadow-sm fs-6 form-control-plaintext form-control-lg px-2">
+                            </div>
+                            <div class="col-md-6 ">
+                                <input type="text" placeholder="Your Email..." class="bg-white shadow-sm fs-6 form-control-plaintext form-control-lg px-2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Subject...." class="bg-white shadow-sm fs-6 form-control-plaintext form-control-lg px-2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <textarea class="bg-white shadow-sm form-control-plaintext form-control-lg px-2 fs-6" placeholder="Your Message..." cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-danger px-4 fs-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- right side end  -->
             </div>
-            <div class="info">
-                <h4>Contact Info</h4>
-                <ul class="contact_info">
-                    <li><a href=""><i class='bx bxs-home'></i>034, Annie Street, Yangon, Myanmar </a></li>
-                    <li><a href=""><i class='bx bx-phone'></i>+1 123 321 3356</a></li>
-                    <li><a href=""><i class='bx bx-mobile'></i>+1 345 765 9821</a></li>
-                    <li><a href=""><i class='bx bx-envelope'></i>santamaria@gmail.com</a></li>
-                    <li><a href=""><i class='bx bxl-facebook'></i>Santa Maria</a></li>
-                    <li><a href=""><i class='bx bx-calendar'></i>Booking & Appointment</a></li>
-                </ul>
+        </div>
+    </section>
+    <!-- contact section end  -->
+    <!-- footer section start  -->
+    <section class="footer mt-4 bg-danger border-top" id="footer">
+        <div class="container-lg">
+            <div class="row ">
+                <div class="col-lg-12 text-center py-3  ">
+                    <h5 class="m-0 text-white ">We learn, We share, We code | This laboratory is for everyone.</h5>
+                </div>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+    <!-- footer section end  -->
+
+
 </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
 
 </html>
